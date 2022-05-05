@@ -23,6 +23,16 @@ img {
     height: auto;
 }
 
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -37,16 +47,22 @@ img {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
-.list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
+// почистить
+// .list {
+//     list-style: none;
+//     padding-left: 0;
+//     margin-top: 0;
+//     margin-bottom: 0;
+// }
 
 .hero__title {
     margin-bottom: 50px;

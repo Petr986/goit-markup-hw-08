@@ -1,13 +1,13 @@
 .organization__list {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 }
 
 .organization__price {
-    width: 270px;
+    // width: 450px;
 
         &:not(:last-child) {
-           margin-right: 30px;
+           margin-bottom: 30px;
     }
 }
 
@@ -55,7 +55,9 @@
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.42;
+    line-height: 1.14px;
+    text-align: center;
+
     text-transform: uppercase;
 }
 

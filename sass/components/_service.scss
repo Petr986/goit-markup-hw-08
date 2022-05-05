@@ -1,12 +1,11 @@
 .service {
-    padding: 200px 0 200px 0;
+    padding: 118px 0 118px 0;
     text-align: center;
     background-color: #2f303a;
 }
 
 .overlay {
-    max-width: 1600px;
-    height: 600px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right,
@@ -19,15 +18,17 @@
 }
 
 .service__title {
-    width: 696px;
+    width: 360px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    
+
     text-transform: uppercase;
 
     color: var(--white-color);

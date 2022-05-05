@@ -16,8 +16,8 @@
             <a href="index.html" class="header__logo logo">
                 Web<span class="header__logo--text">Studio</span>
             </a>
-            <nav class="header__container">
-                                <ul class="site__nav list">
+            <nav class="nav">
+                <ul class="site__nav list">
                     <li class="site__nav--price">
                         <a href="" class="site__nav--item link current">Студия</a>
                     </li>
@@ -53,9 +53,52 @@
                     </a>
                 </li>
             </ul>  
+            <button type="button" class="burger__btn" data-menu-button aria-expanded="false">
+                <svg class="burger__icon" width="40px" height="40px">
+                    <use href="./img/icon/symbol-defs.svg#burger-open" class="burger__open"></use>
+                    <use href="./img/icon/symbol-defs.svg#burger-close" class="burger_close" width="40px" height="40px"></use>
+                </svg>
+            </button>
+            <div class="mobile__menu" data-menu>
+                <nav class="mobile__nav">
+                    <ul class="mobile__nav-list">
+                        <li class="mobile__nav-item">
+                            <a href="" class="mobile__nav-link  current">Студия</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a href="" class="mobile__nav-link">Портфолио</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a href="" class="mobile__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="mobile__contact">
+                    <li class="mobile__contact-item">
+                        <a href="" class="mobile__contact-link--big">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile__contact-item">
+                        <a href="" class="mobile__contact-link--small">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile__social">
+                    <li class="mobile__social-item">
+                        <a href="https://instagram.com" class="mobile__social-link">Instagram</a>
+                    </li>
+                    <li class="mobile__social-item">
+                        <a href="https://twitter.com" class="mobile__social-link">Twitter</a>
+                    </li>
+                    <li class="mobile__social-item">
+                        <a href="https://Facebook.com" class="mobile__social-link">Facebook</a>
+                    </li>
+                    <li class="mobile__social-item">
+                        <a href="https://LinkedIn.com" class="mobile__social-link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
-    <main>
+     <main>
         <!--Заказ услуги-->
         <section class="service section overlay">
             <div class="container "> 
@@ -459,7 +502,7 @@
             </div>
         </section>
     </main>
-    <footer class="page__footer">
+    <!-- <footer class="page__footer">
         <div class="container footer__box">
             <div class="footer__container">
                 <a href="index.html" class="logo">
@@ -531,7 +574,8 @@
                 </div>
             </form>                                 
         </div>
-    </footer>
-    <script src="./js/modal.js"></script> 
+    </footer> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
