@@ -1,5 +1,4 @@
 .header {
-    
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -115,9 +114,17 @@
     margin-left: auto;
     border: none;
     background-color: transparent;
-
+    
     @media screen and (min-width: 768px){ 
         display: none;
+    }
+}
+
+.burger__icon {
+
+    .burger__btn:hover &,
+    .burger__btn:focus & {
+        fill: var(--accent-color);
     }
 }
 
@@ -147,8 +154,11 @@
     height: 100%;
 
     transform: translateX(100%);
+    transition-duration: var(--time-for-hover);
+    transition-timing-function: var(--time-function);
     background-color: var(--white-color);
 
+    
     &.is-open {
         transform: translateX(0);
     }
@@ -180,6 +190,11 @@
     letter-spacing: 0.02em;
 
     color: #212121;
+
+    &:active {
+        color: var(--accent-color);
+    }
+
 }
 
 .current {
