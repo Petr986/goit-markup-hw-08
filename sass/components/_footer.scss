@@ -5,13 +5,14 @@
 }
 
 .footer__box {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+    text-align: center;
 }
 
 .footer__container {
-    display: block;
-    margin-right: 70px;
+    // display: block;
+    // margin-right: 70px;
 }
 
 .footer__logo--text {
@@ -19,14 +20,14 @@
 }
 
 .address__list {
-    width: 220px;
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .adress__price { 
     
     &:not(:last-child) {
-        margin-bottom: 9px;
+        margin-bottom: 8px;
     }
 }
 
@@ -60,12 +61,11 @@
 }
 
 
-
 .footer__hero--name {
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.18;
+    font-size: 14px;
+    line-height: 1.14;
     text-transform: uppercase;
 
     color: var(--white-color);

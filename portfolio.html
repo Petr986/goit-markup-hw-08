@@ -9,22 +9,23 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
+</head>
 <body>
     <header class="header">
         <div class="header__container container">
-            <nav class="header__container">
-                <a href="index.html" class="header__logo logo">
-                    Web<span class="header__logo--text">Studio</span>
-                </a>
+            <a href="index.html" class="header__logo logo">
+                Web<span class="header__logo--text">Studio</span>
+            </a>
+            <nav class="nav">
                 <ul class="site__nav list">
                     <li class="site__nav--price">
                         <a href="./index.html" class="site__nav--item link">Студия</a>
                     </li>
                     <li class="site__nav--price">
-                        <a href="" class="site__nav--item link current">Портфолио</a>
+                        <a href="" class="link current">Портфолио</a>
                     </li>
                     <li class="site__nav--price">
-                        <a href="" class="site__nav--item link">Контакты</a>
+                        <a href="" class="link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -47,6 +48,50 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="burger__btn" data-menu-button aria-expanded="false">
+                <svg class="burger__icon" width="40px" height="40px">
+                    <use href="./img/icon/symbol-defs.svg#burger-open" class="burger__open"></use>
+                    <use href="./img/icon/symbol-defs.svg#burger-close" class="burger_close" width="40px" height="40px">
+                    </use>
+                </svg>
+            </button>
+            <div class="mobile__menu" data-menu>
+                <nav class="mobile__nav">
+                    <ul class="mobile__nav-list">
+                        <li class="mobile__nav-item">
+                            <a href="./index.html" class="mobile__nav-link">Студия</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a href="" class="mobile__nav-link current">Портфолио</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a href="" class="mobile__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="mobile__contact">
+                    <li class="mobile__contact-item">
+                        <a href="" class="mobile__contact-link--big">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile__contact-item">
+                        <a href="" class="mobile__contact-link--small">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile__social">
+                    <li class="mobile__social-item">
+                        <a href="https://instagram.com" class="mobile__social-link">Instagram</a>
+                    </li>
+                    <li class="mobile__social-item">
+                        <a href="https://twitter.com" class="mobile__social-link">Twitter</a>
+                    </li>
+                    <li class="mobile__social-item">
+                        <a href="https://Facebook.com" class="mobile__social-link">Facebook</a>
+                    </li>
+                    <li class="mobile__social-item">
+                        <a href="https://LinkedIn.com" class="mobile__social-link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
