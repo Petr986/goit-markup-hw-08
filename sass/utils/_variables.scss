@@ -1,0 +1,17 @@
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* акцент #2196f3 */
+/* белый цвет #FFFFFF */
+/* цвет фона подвала #2f303a */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --white-color: #ffffff;
+    --footer-color: #2f303a;
+
+    /* other */ 
+    --time-for-hover: 250ms;
+    --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
