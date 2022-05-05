@@ -1,13 +1,26 @@
 .organization__list {
-    // display: flex;
-    // align-items: center;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .organization__price {
-    // width: 450px;
 
+    @media screen and (max-width: 767px) {
         &:not(:last-child) {
            margin-bottom: 30px;
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        flex-basis: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: 270px;
     }
 }
 
@@ -59,6 +72,10 @@
     text-align: center;
 
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .organization__text {

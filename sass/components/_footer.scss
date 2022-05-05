@@ -5,9 +5,29 @@
 }
 
 .footer__box {
-    // display: flex;
-    // align-items: baseline;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+        flex-wrap: nowrap;
+    }
+}
+
+.footer__adress {
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+    } 
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        text-align: start;
+    }
 }
 
 .footer__container {
@@ -60,6 +80,19 @@
     }
 }
 
+.footer__social {
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
 
 .footer__hero--name {
     margin-bottom: 20px;
@@ -69,12 +102,7 @@
     text-transform: uppercase;
 
     color: var(--white-color);
-}
 
-.footer__socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .footer__socials--item {

@@ -1,9 +1,17 @@
 .form {
     margin-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        margin-left: auto;
+        text-align: start;
+    }
 }
 
 .footer__form--container {
-    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .footer__form--email {
@@ -21,6 +29,11 @@
     background-color: var(--footer-color);
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+        width: 358px;
+    }
 }
 
 .footer__form-btn {
@@ -35,7 +48,6 @@
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.06em;
-    border-radius: 4px;
 }
 
 .footer__form--send {
