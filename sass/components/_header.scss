@@ -1,21 +1,13 @@
 .header {
-    background: var(--white-color);
-    border-bottom: 1px solid #ececec;
+    
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
+    
 }
 
 .logo {
-    font-family: Raleway, cursive;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
 
-    color: var(--accent-color);
 
     &:focus {
         color: #212121;
@@ -23,32 +15,21 @@
 }
 
 .header__logo {
-    margin-right: 93px;
+    
 }
 
 .header__logo--text {
-    color: var(--title-text-color);
+    
 }
 
 
 
 .site__nav {
-    display: flex;
-    align-items: center;
+    
 }
 
 .site__nav .link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
 
-    transition-property: color;
-    transition-duration: var(--time-for-hover);
-    transition-timing-function: var(--time-function);
-
-    color: var(--title-text-color);
 
     &:hover,
     &:focus {
@@ -59,29 +40,27 @@
 
 
 .site__nav .current {
-    color: var(--accent-color);
+    
 }
 
 .site__nav--item {
-    position: relative;
-    display: block;
-    padding: 32px 0 32px 0;
+    
 }
 
 .current {
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -1px;
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: -1px;
 
-        display: block;
-        width: 100%;
-        height: 4px;
+    //     display: block;
+    //     width: 100%;
+    //     height: 4px;
 
-        border-radius: 2px;
-        background-color: var(--accent-color);
-    }
+    //     border-radius: 2px;
+    //     background-color: var(--accent-color);
+    // }
 }
 
 .current {
@@ -97,30 +76,15 @@
 }
 
 .site__contact {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    
 }
 
 .site__contact--item {
-    margin-right: 50px;
+   
 }
 
 .site__contact--adress {
-    display: flex;
-    align-items: center;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
-    transition-property: color;
-    transition-duration: var(--time-for-hover);
-    transition-timing-function: var(--time-function);
-
-    color: var(--primary-text-color);
+    
 
     &:hover,
     &:focus {
@@ -136,11 +100,6 @@
 
 
 .site__contact--icon {
-    margin-right: 10px;
-    fill: #afb1b8;
-
-    transition-property: fill;
-    transition-duration: var(--time-for-hover);
-    transition-timing-function: var(--time-function);  
+ 
 }
 
