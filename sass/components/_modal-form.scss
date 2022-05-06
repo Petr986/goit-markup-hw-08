@@ -18,6 +18,8 @@
     position: relative;
     margin-bottom: 10px;
 
+    
+
         &:hover .form__icon,
         &:focus .form__icon {
             fill: var(--accent-color);
@@ -91,7 +93,7 @@ textarea {
 
 .form__textarea {
     margin-top: 5px;
-
+    
     padding-top: 12px;
     padding-left: 16px;
 
