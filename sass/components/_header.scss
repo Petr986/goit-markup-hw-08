@@ -1,24 +1,27 @@
 .header {
+    padding: 24px 0 24px 0;
     border-bottom: 1px solid #ECECEC;
     
-
     @media screen and (max-width: 767px) {
-        padding-top: 10px;
-        padding-bottom: 10px;  
+            padding-top: 10px;
+            padding-bottom: 10px;
     }
+
+    @media screen and (min-width: 768px) {
+        padding: 21px 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 24px 0px;
+    }
+    
 }
 
 .header__container {
     display: flex;
     align-items: center;
 
-    @media screen and (min-width: 768px) {
-        padding: 21px 15px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding: 24px 15px;
-    }
+    
 }
 
 .logo {
@@ -309,6 +312,7 @@
 
 .mobile__social {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mobile__social-item {

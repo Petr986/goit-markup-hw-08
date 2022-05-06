@@ -20,7 +20,10 @@
 }
 
 .footer__adress {
+    margin-bottom: 60px;
+
     @media screen and (min-width: 768px) {
+        margin-bottom: 0;
         margin-right: 165px;
     } 
     
@@ -30,10 +33,8 @@
     }
 }
 
-.footer__container {
-    // display: block;
-    // margin-right: 70px;
-}
+.footer__container {}
+   
 
 .footer__logo--text {
     color: var(--white-color);
@@ -41,7 +42,6 @@
 
 .address__list {
     margin-top: 20px;
-    margin-bottom: 60px;
 }
 
 .adress__price { 

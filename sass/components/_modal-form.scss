@@ -118,13 +118,17 @@ textarea {
 
 .check {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 31px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.7;
 
     color: rgb(117, 117, 117);
+
+    @media screen and (min-width: 480px) {
+            align-items: center;
+        }
 
     @media screen and (min-width: 1200px) {
         justify-content: center;
@@ -142,6 +146,7 @@ textarea {
 
 .check__box {
     display: inline-block;
+    flex-shrink: 0;
     vertical-align: middle;
     margin-right: 5px;
 

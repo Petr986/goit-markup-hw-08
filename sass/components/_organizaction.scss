@@ -30,7 +30,6 @@
         content: "";
         height: 120px;
         margin-bottom: 30px;
-        background-size: content;
         background-repeat: no-repeat;
         background-position: center;
         background-color: #f5f4fa;
@@ -68,12 +67,12 @@
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     text-align: center;
 
     text-transform: uppercase;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         text-align: start;
     }
 }

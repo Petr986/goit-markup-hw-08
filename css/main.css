@@ -119,6 +119,7 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+  border: none;
   background-color: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
@@ -130,6 +131,7 @@ a {
 }
 
 .header {
+  padding: 24px 0 24px 0;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -140,21 +142,21 @@ a {
   }
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-}
-
 @media screen and (min-width: 768px) {
-  .header__container {
-    padding: 21px 15px;
+  .header {
+    padding: 21px 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header__container {
-    padding: 24px 15px;
+  .header {
+    padding: 24px 0px;
   }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -416,6 +418,7 @@ a {
 
 .mobile__social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile__social-item {
@@ -490,7 +493,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio/desktop/overlay-block-service_lg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio/overlay-block-service.jpg);
   }
 }
 
@@ -556,7 +559,7 @@ a {
 }
 
 .modal {
-  padding: 20px;
+  padding: 40px 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -698,12 +701,18 @@ textarea {
 
 .check {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 31px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
   color: #757575;
+}
+
+@media screen and (min-width: 480px) {
+  .check {
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -722,6 +731,7 @@ textarea {
 
 .check__box {
   display: inline-block;
+  flex-shrink: 0;
   vertical-align: middle;
   margin-right: 5px;
   width: 16px;
@@ -778,7 +788,6 @@ textarea {
   content: "";
   height: 120px;
   margin-bottom: 30px;
-  background-size: content;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
@@ -805,12 +814,12 @@ textarea {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .organization__title {
     text-align: start;
   }
@@ -1198,8 +1207,13 @@ textarea {
   }
 }
 
+.footer__adress {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .footer__adress {
+    margin-bottom: 0;
     margin-right: 165px;
   }
 }
@@ -1217,7 +1231,6 @@ textarea {
 
 .address__list {
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 .adress__price:not(:last-child) {
@@ -1336,13 +1349,16 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .footer__form--email {
+    margin-bottom: 0;
     margin-right: 12px;
     width: 358px;
   }
 }
 
 .footer__form-btn {
-  padding-right: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__hero--text {
@@ -1352,9 +1368,5 @@ textarea {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.06em;
-}
-
-.footer__form--send {
-  position: absolute;
 }
 /*# sourceMappingURL=main.css.map */
