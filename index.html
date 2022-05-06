@@ -220,16 +220,36 @@
                 </h2>
                 <ul class="classes__list list">
                     <li class="classes__price classes__meta">
-                        <picture></picture>
-                        <img src="./img/studio/keyboard.jpg" alt="картинка с клавиатурой" width="370">
+                        <img 
+                            src="./img/studio/keyboard.jpg"
+                            srcset="
+                                ./img/studio/keyboard.jpg 1x,
+                                ./img/studio/desktop/keyboard@2x_lg.jpg 2x
+                            " 
+                            alt="картинка с клавиатурой" 
+                            width="370">
                         <div class="classes__out">Десктопные приложения</div>
                     </li>
                     <li class="classes__price classes__meta">
-                        <img src="./img/studio/notebook.jpg" alt="картинка с ноутбуком" width="370">
+                        <img 
+                            src="./img/studio/notebook.jpg"
+                            srcset="
+                                ./img/studio/notebook.jpg  1x,
+                                ./img/studio/desktop/notebook@2x_lg.jpg 2x
+                            " 
+                            alt="картинка с ноутбуком"
+                            width="370">
                         <div class="classes__out">Мобильные приложения</div>
                     </li>
                     <li class="classes__price classes__meta">
-                        <img src="./img/studio/tablet.jpg" alt="картинка с планшетом" width="370">
+                        <img 
+                            src="./img/studio/tablet.jpg"
+                            srcset="
+                                ./img/studio/tablet.jpg 1x,
+                                ./img/studio/desktop/tablet@2x_lg.jpg 2x
+                            " 
+                            alt="картинка с планшетом" 
+                            width="370">
                         <div class="classes__out">Дизайнерские решения</div>
                     </li>
                 </ul>
@@ -241,7 +261,24 @@
                 <h2 class="hero__title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__price">
-                        <img src="./img/studio/igor.jpg" alt="фото Игоря" width="270">
+                        <picture>
+                            <!-- Desktop pictures -->
+                            <source srcset="
+                                ./img/studio/igor.jpg  1x,
+                                ./img/studio/desktop/igor@2x_lg.jpg 2x
+                                " media="(min-width: 1200px)" type="image/jpg" />
+                            <!-- Tablet pictures -->
+                            <source srcset="
+                                ./img/studio/tablet/igor_md.jpg 1x,
+                                ./img/studio/tablet/igor@2x_md.jpg 2x
+                                " media="(min-width: 768px)" type="image/jpg" />
+                            <!-- Mobile pictures -->
+                            <source srcset="
+                                ./img/studio/mobile/igor_sm.jpg    1x,
+                                ./img/studio/mobile/igor@2x_sm.jpg 2x
+                                " media="(max-width: 767px)" type="image/jpg" /> 
+                            <img src="./img/studio/mobile/igor_sm.jpg" alt="фото Игоря" width="450">
+                        </picture>
                         <div class="team__hero">
                             <h3 class="team__name">
                                 Игорь Демьяненко
@@ -298,7 +335,24 @@
                         </div>
                     </li>
                     <li class="team__price">
-                        <img src="./img/studio/olga.jpg" alt="фото Ольги" width="270">
+                        <picture>
+                            <!-- Desktop pictures -->
+                            <source srcset="
+                                ./img/studio/olga.jpg  1x,
+                                ./img/studio/desktop/olga@2x_lg.jpg 2x
+                                " media="(min-width: 1200px)" type="image/jpg" />
+                            <!-- Tablet pictures -->
+                            <source srcset="
+                                ./img/studio/tablet/olga_md.jpg 1x,
+                                ./img/studio/tablet/olga@2x_md.jpg 2x
+                                " media="(min-width: 768px)" type="image/jpg" />
+                            <!-- Mobile pictures -->
+                            <source srcset="
+                                ./img/studio/mobile/olga_sm.jpg    1x,
+                                ./img/studio/mobile/olga@2x_sm.jpg 2x
+                                " media="(max-width: 767px)" type="image/jpg" />
+                            <img src="./img/studio/mobile/olga_sm.jpg" alt="фото Ольги" width="450">
+                        </picture>
                         <div class="team__hero">
                             <h3 class="team__name">
                                 Ольга Репина
@@ -343,7 +397,24 @@
                         </div>
                     </li>
                     <li class="team__price">
-                        <img src="./img/studio/nikolay.jpg" alt="фото Николая" width="270">
+                        <picture>
+                            <!-- Desktop pictures -->
+                            <source srcset="
+                                ./img/studio/nikolay.jpg  1x,
+                                ./img/studio/desktop/nikolay@2x_lg.jpg 2x
+                                " media="(min-width: 1200px)" type="image/jpg" />
+                            <!-- Tablet pictures -->
+                            <source srcset="
+                                ./img/studio/tablet/nikolay_md.jpg 1x,
+                                ./img/studio/tablet/nikolay@2x_md.jpg 2x
+                                " media="(min-width: 768px)" type="image/jpg" />
+                            <!-- Mobile pictures -->
+                            <source srcset="
+                                ./img/studio/mobile/nikolay_sm.jpg    1x,
+                                ./img/studio/mobile/nikolay@2x_sm.jpg 2x
+                                " media="(max-width: 767px)" type="image/jpg" />
+                            <img src="./img/studio/mobile/nikolay_sm.jpg" alt="фото Николая" width="450">
+                        </picture>
                         <div class="team__hero">
                             <h3 class="team__name">
                                 Николай Тарасов
@@ -388,7 +459,24 @@
                         </div>
                     </li>
                     <li class="team__price">
-                        <img src="./img/studio/michail.jpg" alt="фото Михаила" width="270">
+                        <picture>
+                            <!-- Desktop pictures -->
+                            <source srcset="
+                                ./img/studio/michail.jpg  1x,
+                                ./img/studio/desktop/michail@2x_lg.jpg 2x
+                                " media="(min-width: 1200px)" type="image/jpg" />
+                            <!-- Tablet pictures -->
+                            <source srcset="
+                                ./img/studio/tablet/michail_md.jpg 1x,
+                                ./img/studio/tablet/michail@2x_md.jpg 2x
+                                " media="(min-width: 768px)" type="image/jpg" />
+                            <!-- Mobile pictures -->
+                            <source srcset="
+                                ./img/studio/mobile/michail_sm.jpg    1x,
+                                ./img/studio/mobile/michail@2x_sm.jpg 2x
+                                " media="(max-width: 767px)" type="image/jpg" />
+                            <img src="./img/studio/mobile/michail_sm.jpg" alt="фото Михаила" width="450">
+                        </picture>
                         <div class="team__hero">
                             <h3 class="team__name">
                                 Михаил Ермаков

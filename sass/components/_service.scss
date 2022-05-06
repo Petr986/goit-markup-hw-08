@@ -15,10 +15,58 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../img/studio/overlay-block-services.jpg");
+        url(../img/studio/mobile/overlay-block-service_sm.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width: 480px) {
+           background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../img/studio/mobile/overlay-block-service_sm.jpg);
+        
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url(../img/studio/mobile/overlay-block-service@2x_sm.jpg);
+            }
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../img/studio/tablet/overlay-block-service_md.jpg);
+    
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url(../img/studio/tablet/overlay-block-service@2x_md.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../img/studio/desktop/overlay-block-service_lg.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) { 
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../img/studio/desktop/overlay-block-service@2x_lg.jpg);
+        }
+    }
 }
 
 .service__title {
